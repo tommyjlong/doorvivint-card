@@ -17,10 +17,9 @@ An example of what the card would look like:
 The recommended way to install is to use HACS. Alternatively, this can be manually installed.
 
 ## HACS
-- Go to the HACS Settings, and under ADD CUSTOM RESPOSITORY, paste ```https://github.com/tommyjlong/doorvivint-card ```, and chose ```Plugin``` for the Category.  Hit save, and a new entry titled **[plugin]
-tommyjlong/doorvivint-card** should be created under CUSTOM REPOSITORY.  
-- Click on the new entry and a page should appear which will allow you to install this.  
-- Make sure to follow the instructions at the very bottom of the page for adding the url and type to the lovelace configuration.
+- Go to the HACS Settings (look for 3 vertical dots), and under ADD CUSTOM RESPOSITORY, paste ```https://github.com/tommyjlong/doorvivint-card ```, and chose ```Lovelace``` (or ```Plugin```) for the Category.  Hit Add (or Save), and a new entry titled **Doorvivint Card** should now be present.  
+- Click on this new entry and a page should appear which will allow you to install this.  Now install it.
+- Make sure to follow the instructions at the very bottom of the page for adding the url and type to the lovelace resource configuration.
 
 ## Manual:
 1. Download the [doorvivint-card.js](https://github.com/tommyjlong/doorvivint-card/blob/master/dist/doorvivint-card.js) and the companion [jssip](https://github.com/tommyjlong/doorvivint-card/blob/master/dist/jssip-3.5.3.min.js) modules to `HACONFIGDIR/www/custom-lovelace/doorvivint-card/` (or in some other folder under `/HACONFIGDIR/www/`).
@@ -120,4 +119,5 @@ transport=transport-wss
 # Credits:
 - The original DoorDroid Call came from Ronald Dehuysser [rdehuyss](https://github.com/rdehuyss/DoorDroid).
 - The JavaScript SIP Library (JSSIP) is used to provide the SIP Protocol for the Browser. Reference: [jssip home](https://jssip.net/), and [jssip github](https://github.com/versatica/JsSIP/).
+
 

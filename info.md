@@ -2,7 +2,7 @@
 
 This is a Lovelace based Doorbell Card for Home Assistant that is for use with a Vivint/Vivotek Video Doorbell that has been configured for local use. It allows the user to view the current video image from the doorbell, and with the press of a button, it can also place a SIP call to the Doorbell via Asterisk.  Note: As the Vivint Doorbell uses the software from Vivotek, this card should work with any Vivotek camera that has a speaker and microphone, and in theory, this should work with any camera that supports SIP.
 
-For details, check out this [README.md](https://github.com/tommyjlong/doorvivint-card/blob/master/README.md).
+For details, check out this [README.md](https://github.com/tommyjlong/doorvivint-card/blob/master/README.md)
 
 An example of what the card would look like:
 
@@ -13,10 +13,9 @@ An example of what the card would look like:
 # Installation:
 ## HACS
 
-- Go to the HACS Settings, and under ADD CUSTOM RESPOSITORY, paste ```https://github.com/tommyjlong/doorvivint-card ```, and chose ```Plugin``` for the Category.  Hit save, and a new entry titled **[plugin]
-tommyjlong/doorvivint-card** should be created under CUSTOM REPOSITORY.  
-- Click on the new entry and a page should appear which will allow you to install this.  
-- Make sure to follow the instructions at the very bottom of the page for adding the url and type to the lovelace configuration.
+- Go to the HACS Settings (look for 3 vertical dots), and under ADD CUSTOM RESPOSITORY, paste ```https://github.com/tommyjlong/doorvivint-card ```, and chose ```Lovelace``` (or ```Plugin```) for the Category.  Hit Add (or Save), and a new entry titled **Doorvivint Card** should now be present.  
+- Click on this new entry and a page should appear which will allow you to install this.  Now install it.
+- Make sure to follow the instructions at the very bottom of the page for adding the url and type to the lovelace resource configuration.
 
 
 ## Manually: 
@@ -55,5 +54,6 @@ Here is an example:
 - ```sip_wss_url:``` This is the websocket URL to connect to Asterisk's websocket server. From the example, the browser client will attempt to connect to Asterisk using a TLS websocket to your external world's domain/IP address (my.duckdns.org) using port 8089.
 - ```sip_doorbell_username:``` This is part of the destination doorbell's SIP URI. ```sip:sip_doorbell_username@sip_doorbell_domain```.  From our example, this will become: ```sip:101@192.168.1.6```.
 - ```sip_doorbell_domain:```  (See ```sip_doorbell_username```)
+
 
 
