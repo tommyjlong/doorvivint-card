@@ -1,10 +1,12 @@
-# Vivint Video Doorbell Card for Lovelace
+# Vivint/Vivotek Video Doorbell Card for Lovelace
 
-This is a Lovelace based Doorbell Card for Home Assistant that is for use with a Vivint Video Doorbell. It allows the user to view the current video image from the doorbell, and with a button press, it can also place a SIP call to the Doorbell via Asterisk.  
+This is a Lovelace based Doorbell Card for Home Assistant that is for use with a Vivint/Vivotek Video Doorbell that has been configured for local use. It allows the user to view the current video image from the doorbell, and with the press of a button, it can also place a SIP call to the Doorbell via Asterisk.  Note: As the Vivint Doorbell uses the software from Vivotek, this card should work with any Vivotek camera that has a speaker and microphone, and in theory, this should work with any camera that supports SIP.
 
 For details, check out this [README.md](https://github.com/tommyjlong/doorvivint-card/blob/master/README.md).
 
 An example of what the card would look like:
+
+
 ![DoorVivint Card](https://github.com/tommyjlong/doorvivint-card/blob/master/DoorVivint-Card.jpg?raw=true)
 
 
@@ -47,10 +49,11 @@ Here is an example:
           }
 
 ```
-- ```sip_server:``` This is part of the Browser's SIP URI:  ```sip:sip_username@sip_server``` used to identify itself to Asterisk.  From our example: ```sip:1001@my.duckdns.org```
-- ```sip_username:```  (See sip_server)
+- ```sip_server:``` This is part of the Browser's WebRTC Client SIP URI:  ```sip:sip_username@sip_server``` which is used by SIP to identify itself to Asterisk.  From our example this will become: ```sip:1001@my.duckdns.org```
+- ```sip_username:```  (See ```sip_server```)
 - ```sip_password:``` This is used as part of the SIP Authentication with Asterisk.
 - ```sip_wss_url:``` This is the websocket URL to connect to Asterisk's websocket server. From the example, the browser client will attempt to connect to Asterisk using a TLS websocket to your external world's domain/IP address (my.duckdns.org) using port 8089.
-- ```sip_doorbell_username:``` This is part of the destination doorbell's SIP URI. ```sip:sip_doorbell_username@sip_doorbell_domain```.  From our example: ```sip:101@192.168.1.6```.
-- ```sip_doorbell_domain:```  (See sip_doorbell_username)
+- ```sip_doorbell_username:``` This is part of the destination doorbell's SIP URI. ```sip:sip_doorbell_username@sip_doorbell_domain```.  From our example, this will become: ```sip:101@192.168.1.6```.
+- ```sip_doorbell_domain:```  (See ```sip_doorbell_username```)
+
 
