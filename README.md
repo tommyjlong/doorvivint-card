@@ -28,9 +28,11 @@ Add the following resources in your lovelace resource config:
 
 ```yaml
 resources:
-  - url: /local/custom-lovelace/doorvivint-card/doorvivint.js
   - url: /local/custom-lovelace/doorvivint-card/jssip-3.5.3.min.js
+    type: js
+  - url: /local/custom-lovelace/doorvivint-card/doorvivint.js
     type: module
+
 ```
 
 # Lovelace Configuration:

@@ -15,7 +15,13 @@ An example of what the card would look like:
 
 - Go to the HACS Settings (look for 3 vertical dots), and under ADD CUSTOM RESPOSITORY, paste ```https://github.com/tommyjlong/doorvivint-card ```, and chose ```Lovelace``` (or ```Plugin```) for the Category.  Hit Add (or Save), and a new entry titled **Doorvivint Card** should now be present.  
 - Click on this new entry and a page should appear which will allow you to install this.  Now install it.
-- Make sure to follow the instructions at the very bottom of the page for adding the url and type to the lovelace resource configuration.
+- Make sure to follow the instructions at the very bottom of the page for adding the url and type to the lovelace resource configuration.  It should be something like:
+```yaml
+  - url: /hacsfiles/doorvivint-card/jssip-3.5.3.min.js
+    type: js
+  - url: /hacsfiles/doorvivint-card/doorvivint-card.js
+    type: module
+```
 
 
 ## Manually: 
